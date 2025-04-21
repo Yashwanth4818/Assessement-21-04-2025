@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.image-section {
+    flex: 1;
+    display: block;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-section {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 2rem;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 1.2rem;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 1rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    background-color: #0a1e51;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.signup-text {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.signup-text a {
+    color: #0a1e51;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        border: none;
+        box-shadow: none;
+    }
+
+    .image-section {
+        display: none;
+    }
+
+    .form-section {
+        width: 100%;
+        padding: 2rem 1.2rem;
+    }
+
+    .logo {
+        width: 70px;
+        margin-bottom: 1.5rem;
+    }
+}
